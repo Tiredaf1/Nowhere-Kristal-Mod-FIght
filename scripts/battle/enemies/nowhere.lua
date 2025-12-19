@@ -23,7 +23,7 @@ function Nowhere:init()
        
         "spear",
         "aiming",
-        "movingareana",
+        "movingarena",
         "circles",
         "sniper",
         "basic",
