@@ -7,7 +7,7 @@ function Undyne:onStart()
     end
 
     -- Spawn tombak setiap 0.5 detik
-    self.timer:every(0.5, function()
+    self.timer:every(0.3, function()
         
         -- 1. Pilih sisi acak
         local side = Utils.pick{"top", "bottom", "left", "right"}
@@ -35,21 +35,21 @@ function Undyne:onStart()
         local angle = Utils.angle(x, y, Game.battle.soul.x, Game.battle.soul.y)
 
         -- 3. SPAWN TOMBAK
-        local tombak = self:spawnBullet("battle/bullets/tombak", x, y)
+        local tombak = self:spawnBullet("bullets/tombak", x, y)
       
         
        if tombak then 
             -- === KEMBALI KE PENGATURAN PABRIK ===
             -- Hapus fungsi tombak.draw = function... tadi.
             
-            -- Kita set visualnya biar AMAN:
+            -- Visual
             tombak.alpha = 1
             tombak.color = {1, 1, 1}
             tombak.layer = BATTLE_LAYERS["above_arena"] -- Tetap di atas
             
             -- Sesuaikan ukuran (Karena gambar lu 60px, kita kecilin)
-            tombak.scale_x = 0.25
-            tombak.scale_y = 0.25
+            tombak.scale_x = 0.5
+            tombak.scale_y = 0.5
             tombak.graphics.filter = "nearest"
 
             -- Settingan Fisika

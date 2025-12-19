@@ -1,6 +1,6 @@
 -- File: scripts/battle/encounters/nowhere.lua
 
--- PASTIIN BARIS INI TULISANNYA 'Class(Encounter)'
+
 local NowhereEncounter, super = Class(Encounter)
 
 function NowhereEncounter:init()

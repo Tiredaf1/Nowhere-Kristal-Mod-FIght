@@ -6,14 +6,13 @@ function Nowhere:init()
     -- Identitas Musuh
     self.name = "Nowhere"
     
-    -- PENTING: Pastikan kamu punya file actor 'nowhere.lua' di folder actors.
-    -- Kalau belum punya, ganti "nowhere" di bawah ini jadi "dummy" biar gak error.
+    -- set sprite musuh
     self:setActor("nowhere") 
     
     -- Status
-    self.max_health = 500
-    self.health = 500
-    self.attack = 40
+    self.max_health = 1000
+    self.health = 1000
+    self.attack = 30
     self.defense = 10
     self.money = 19000000
     self.experience = 1998
@@ -21,14 +20,16 @@ function Nowhere:init()
     -- Daftar Serangan (Pastikan file wavensya ada di folder waves)
     self.waves = {
        
-        "circle",
+       
         "spear",
         "aiming",
+        "movingareana",
+        "circles",
+        "sniper",
         "basic",
-        "movingarena",
-        "spiral",
-        "sniper"
-        
+        "aiming"
+    
+
     }
 
     -- Dialog Musuh (Acak setiap giliran)
@@ -43,7 +44,7 @@ function Nowhere:init()
     }
 
     -- Teks saat di-CHECK
-    self.check = "AT 40 DF 10\n* Nowhere yet Everywhere.\n* Be Careful." 
+    self.check = "AT 30 DF 10\n* Nowhere yet Everywhere.\n* Be Careful." 
 
     -- Teks Narasi (Flavor Text) di bawah layar
     self.text = {
