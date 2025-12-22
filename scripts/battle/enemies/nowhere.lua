@@ -72,16 +72,16 @@ function Nowhere:onAct(battler, name)
         -- Teks narasi ACT
         return {
             "* You used Shine.[wait:5]\n* Nowhere is feeling something.",
-            "* 9 more times."
+            "* Sike, just kidding"
         }
         
     elseif name == "Break" then
-        -- Kasih Mercy 25%
-        self:addMercy(25)
+        -- Kasih Mercy 50% biar cepet
+        self:addMercy(50)
         self.dialogue_override = "Try your best I guess, haha..."
         return {
             "* You used Break.[wait:5]\n* Nowhere is feeling dizzy.",
-            "* 3 more times."
+            "* this time ... maybe"
         }
 
     elseif name == "Standard" then -- X-Action (ACT Standar Ralsei/Susie/Kris)

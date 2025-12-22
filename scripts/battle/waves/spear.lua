@@ -36,11 +36,11 @@ function Undyne:onStart()
 
         -- 3. SPAWN TOMBAK
         local tombak = self:spawnBullet("bullets/tombak", x, y)
-      
-        
-       if tombak then 
-            -- === KEMBALI KE PENGATURAN PABRIK ===
-            -- Hapus fungsi tombak.draw = function... tadi.
+
+
+
+
+       if tombak then
             
             -- Visual
             tombak.alpha = 1
