@@ -1,10 +1,10 @@
 {
     // The ID of your mod. Should be unique!!
-    "id": "testlagiyaallah",
+    "id": "nowherebeta",
     // Displays on the main menu.
-    "name": "testlagiyaallah",
+    "name": "NowhereBETA",
     // Displays underneath the name. Optional.
-    "subtitle": "",
+    "subtitle": "this isnt anything great",
 
     // The version of your mod.
     "version": "v1.0.0",
