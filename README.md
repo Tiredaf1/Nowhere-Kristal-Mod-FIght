@@ -12,5 +12,8 @@ A custom battle mod for the **Kristal** Deltarune engine.
 ## 📂 How to Play
 1. Download the Kristal engine.
 2. Place this folder into your `mods` directory.
-3. Launch Kristal and select **testlagiyaallah**.
-**i forgot to change the name you can name it anything u want
+3. Launch Kristal and select **Nowhere**.
+
+## 🤓 Currently learning
+1. Using Kristal Game Engine
+2. Developing my own homelab
