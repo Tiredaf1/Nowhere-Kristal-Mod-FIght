@@ -1,6 +1,6 @@
-local Undyne, super = Class(Wave)
+local Tombak, super = Class(Wave)
 
-function Undyne:onStart()
+function Tombak:onStart()
     -- Pastikan soul merah
     if Game.battle.soul.setMode then
         Game.battle.soul:setMode("red")
@@ -60,8 +60,8 @@ function Undyne:onStart()
     end)
 end
 
-function Undyne:update()
+function Tombak:update()
     super.update(self)
 end
 
-return Undyne
+return Tombak
